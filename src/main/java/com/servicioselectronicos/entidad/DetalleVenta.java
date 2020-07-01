@@ -5,7 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -17,7 +16,7 @@ public class DetalleVenta {
 	@Column(name = "idDetalleVenta")
 	private int idDetalleVenta;
 	
-	@ManyToOne
+	
 	@Column(name = "idProductoVenta")
 	private int idProductoVenta;
 	
